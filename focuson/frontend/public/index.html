@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#6470f3" />
+  <meta name="description" content="FocusOn – AI Goal Mentor. Turn your goals into reality with AI-powered strategy and roadmaps." />
+  <title>FocusOn – AI Goal Mentor</title>
+
+  <!-- Preconnect to Google Fonts for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!--
+    Anti-flash script: Runs BEFORE React mounts.
+    Reads localStorage and applies dark class immediately
+    to prevent white flash on dark mode refresh.
+  -->
+  <script>
+    (function() {
+      try {
+        var saved = localStorage.getItem('focuson_theme');
+        var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        var useDark = saved === 'dark' || (!saved && prefersDark);
+        if (useDark) document.documentElement.classList.add('dark');
+      } catch(e) {}
+    })();
+  </script>
+</head>
+<body>
+  <noscript>You need to enable JavaScript to run FocusOn.</noscript>
+  <div id="root"></div>
+</body>
+</html>

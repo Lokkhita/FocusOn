@@ -1,0 +1,14 @@
+{
+  "name": "focuson",
+  "private": true,
+  "description": "FocusOn — run API + React app together in development",
+  "scripts": {
+    "install:all": "npm install --prefix frontend && npm install --prefix server",
+    "server": "npm start --prefix server",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently -k -n api,web -c blue,magenta \"npm run server\" \"npm run client\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}

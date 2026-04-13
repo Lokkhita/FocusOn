@@ -1,0 +1,49 @@
+# ════════════════════════════════════════
+# FocusOn — Monorepo .gitignore
+# ════════════════════════════════════════
+
+# ── Environment files (NEVER commit secrets) ──
+.env
+.env.local
+.env.production
+.env.*.local
+backend/.env
+frontend/.env.local
+
+# ── Node / React ──
+node_modules/
+frontend/node_modules/
+frontend/build/
+frontend/.cache/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ── PHP / Laravel ──
+backend/vendor/
+backend/storage/logs/*.log
+backend/storage/framework/cache/
+backend/storage/framework/sessions/
+backend/storage/framework/views/
+backend/bootstrap/cache/*.php
+backend/.phpunit.result.cache
+
+# ── OS files ──
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# ── IDE ──
+.vscode/settings.json
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# ── Build artifacts ──
+dist/
+*.map
+
+# ── Logs ──
+*.log
+logs/

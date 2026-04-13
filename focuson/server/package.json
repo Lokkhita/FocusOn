@@ -1,0 +1,20 @@
+{
+  "name": "focuson-server",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Development API for FocusOn (auth, goals, mock AI). Replace with Laravel in production.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "express": "^4.21.0",
+    "jsonwebtoken": "^9.0.2"
+  }
+}
